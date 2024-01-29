@@ -1,6 +1,6 @@
 \documentclass[a4paper]{exam}
 
-\usepackage{amsmath, amsfonts}
+\usepackage{amsmath,amsfonts,amsthm}
 \usepackage{array}
 % \usepackage{caption}
 \usepackage[a4paper]{geometry}
@@ -100,98 +100,98 @@ Similarly, there are two tables for the E statement, ``All shapes are not purple
 \begin{parts}
   \part[2] There are 6 possible tables for the I statement for our predicates and domain. In the solution box below, replace the \cp{highlighted parts} to provide the I statement, and to complete its tables.
   \begin{solution}
-    I: \textcolor{purple}{Replace this statement.}
+    I: \textcolor{purple}{Some shapes are purple.}
     \[
       \begin{array}{ccc}
     \begin{array}{c|cc}
       & S(x) & P(x) \\\hline
-      \circ & \T & \cp{?} \\
-      \diamond & \T & \cp{?} \\
-      1 & \F & \cp{?} \\
+      \circ & \T & \cp{\T} \\
+      \diamond & \T & \cp{\F} \\
+      1 & \F & \cp{\T} \\
     \end{array}
         &
     \begin{array}{c|cc}
       & S(x) & P(x) \\\hline
-      \circ & \T & \cp{?} \\
-      \diamond & \T & \cp{?} \\
-      1 & \F & \cp{?} \\
+      \circ & \T & \cp{\F} \\
+      \diamond & \T & \cp{\T} \\
+      1 & \F & \cp{\T} \\
     \end{array}
         &
     \begin{array}{c|cc}
       & S(x) & P(x) \\\hline
-      \circ & \T & \cp{?} \\
-      \diamond & \T & \cp{?} \\
-      1 & \F & \cp{?} \\
+      \circ & \T & \cp{\T} \\
+      \diamond & \T & \cp{\T} \\
+      1 & \F & \cp{\T} \\
     \end{array}
         \\ \\
     \begin{array}{c|cc}
       & S(x) & P(x) \\\hline
-      \circ & \T & \cp{?} \\
-      \diamond & \T & \cp{?} \\
-      1 & \F & \cp{?} \\
+      \circ & \T & \cp{\T} \\
+      \diamond & \T & \cp{\F} \\
+      1 & \F & \cp{\F} \\
     \end{array}
         &
     \begin{array}{c|cc}
       & S(x) & P(x) \\\hline
-      \circ & \T & \cp{?} \\
-      \diamond & \T & \cp{?} \\
-      1 & \F & \cp{?} \\
+      \circ & \T & \cp{\F} \\
+      \diamond & \T & \cp{\T} \\
+      1 & \F & \cp{\F} \\
     \end{array}
         &
     \begin{array}{c|cc}
       & S(x) & P(x) \\\hline
-      \circ & \T & \cp{?} \\
-      \diamond & \T & \cp{?} \\
-      1 & \F & \cp{?} \\
+      \circ & \T & \cp{\T} \\
+      \diamond & \T & \cp{\T} \\
+      1 & \F & \cp{\F} \\
     \end{array}
       \end{array}
     \]
   \end{solution}
   \part[2] Do the same for the O statement which also has 6 possible tables.
   \begin{solution}
-    O: \textcolor{purple}{Replace this statement.}
+    O: \textcolor{purple}{Some shapes are not purple.}
     \[
       \begin{array}{ccc}
     \begin{array}{c|cc}
       & S(x) & P(x) \\\hline
-      \circ & \T & \cp{?} \\
-      \diamond & \T & \cp{?} \\
-      1 & \F & \cp{?} \\
+      \circ & \T & \cp{\T} \\
+      \diamond & \T & \cp{\F} \\
+      1 & \F & \cp{\T} \\
     \end{array}
         &
     \begin{array}{c|cc}
       & S(x) & P(x) \\\hline
-      \circ & \T & \cp{?} \\
-      \diamond & \T & \cp{?} \\
-      1 & \F & \cp{?} \\
+      \circ & \T & \cp{\F} \\
+      \diamond & \T & \cp{\T} \\
+      1 & \F & \cp{\T} \\
     \end{array}
         &
     \begin{array}{c|cc}
       & S(x) & P(x) \\\hline
-      \circ & \T & \cp{?} \\
-      \diamond & \T & \cp{?} \\
-      1 & \F & \cp{?} \\
+      \circ & \T & \cp{\F} \\
+      \diamond & \T & \cp{\F} \\
+      1 & \F & \cp{\T} \\
     \end{array}
         \\ \\
     \begin{array}{c|cc}
       & S(x) & P(x) \\\hline
-      \circ & \T & \cp{?} \\
-      \diamond & \T & \cp{?} \\
-      1 & \F & \cp{?} \\
+      \circ & \T & \cp{\T} \\
+      \diamond & \T & \cp{\F} \\
+      1 & \F & \cp{\F} \\
     \end{array}
         &
     \begin{array}{c|cc}
       & S(x) & P(x) \\\hline
-      \circ & \T & \cp{?} \\
-      \diamond & \T & \cp{?} \\
-      1 & \F & \cp{?} \\
+      \circ & \T & \cp{\F} \\
+      \diamond & \T & \cp{\T} \\
+      1 & \F & \cp{\F} \\
     \end{array}
         &
     \begin{array}{c|cc}
       & S(x) & P(x) \\\hline
-      \circ & \T & \cp{?} \\
-      \diamond & \T & \cp{?} \\
-      1 & \F & \cp{?} \\
+      \circ & \T & \cp{\F} \\
+      \diamond & \T & \cp{\F} \\
+      1 & \F & \cp{\F} \\
     \end{array}
       \end{array}
     \]
@@ -201,10 +201,10 @@ Similarly, there are two tables for the E statement, ``All shapes are not purple
   \begin{solution}
     \[
       \begin{array}{c@{\;:\;}l}
-        \text{A} & \forall x(S(x) \cp{?} P(x))\\[5pt]
-        \text{E} & \forall x(S(x) \cp{?} \neg P(x))\\[5pt]
-        \text{I} & \exists x(S(x) \cp{?} P(x))\\[5pt]
-        \text{O} & \exists x(S(x) \cp{?} \neg P(x))
+        \text{A} & \forall x(S(x) \cp{\implies} P(x))\\[5pt]
+        \text{E} & \forall x(S(x) \cp{\implies} \neg P(x))\\[5pt]
+        \text{I} & \exists x(S(x) \cp{\land} P(x))\\[5pt]
+        \text{O} & \exists x(S(x) \cp{\land} \neg P(x))
       \end{array}
     \]
   \end{solution}
@@ -227,7 +227,26 @@ Similarly, there are two tables for the E statement, ``All shapes are not purple
   \end{minipage}
   
   \begin{solution}
-    
+    These can be justified using De Morgan's laws and other equivalences.
+
+    We prove below that $\neg\text{A}\equiv \text{O}$, which implies that $\neg\text{O}\equiv \text{A}$.
+    \begin{proof}
+    \begin{align*}
+      \neg\text{A} &: \neg \forall x (S(x) \implies P(x)) \\
+                   &\equiv \exists x \neg(S(x) \implies P(x)) \\
+                   &\equiv \exists x \neg(\neg S(x) \lor P(x)) \\
+                   &\equiv \exists x (S(x) \land \neg P(x)) \\
+                   &: \text{O}
+    \end{align*}
+  \end{proof}
+  We prove below that $\neg\text{E}\equiv \text{I}$, which implies that $\neg\text{I}\equiv \text{E}$.
+  \begin{align*}
+      \neg\text{E} &: \neg \forall x (S(x) \implies \neg P(x)) \\
+                   &\equiv \exists x \neg(S(x) \implies \neg P(x)) \\
+                   &\equiv \exists x \neg(\neg S(x) \lor \neg P(x)) \\
+                   &\equiv \exists x (S(x) \land P(x)) \\
+                   &: \text{I}
+    \end{align*}
   \end{solution}
   \end{parts}
   
